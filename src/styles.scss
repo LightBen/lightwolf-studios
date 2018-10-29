@@ -69,7 +69,7 @@ footer { grid-area: footer; }
 
 /* Menu */
 .menu {
-    position: fixed; display: grid; opacity: 0; transform: translateY(100vh); width: 100vw; height: 100vh; top: 0; left: 0; padding: 20rem 0; background-color: rgba(#fff, 0.95); z-index: 10; animation-timing-function: ease-in-out;  animation-duration: .5s; animation-fill-mode: forwards; opacity: 1; animation-name: menuAppear; text-align: center;
+    position: fixed; display: grid; opacity: 0; transform: translateY(100vh); width: 100vw; height: 100vh; top: 0; left: 0; padding: 30vh 0; background-color: rgba(#fff, 0.95); z-index: 10; animation-timing-function: ease-in-out;  animation-duration: .5s; animation-fill-mode: forwards; opacity: 1; animation-name: menuAppear; text-align: center;
     .menu-item {
         display: grid;
         &:nth-child(2) a { animation-delay: .3s; }
