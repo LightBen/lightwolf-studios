@@ -3,7 +3,7 @@ window.onload = function() {
         document.getElementById('body').classList.toggle('night');
     }
 }
-
+/*
 var deferredPrompt;
 window.addEventListener('beforeinstallprompt', function (e) {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -34,4 +34,4 @@ function addToHomeScreen() {  var a2hsBtn = document.querySelector(".ad2hs-promp
   deferredPrompt = null;
 
 });
-}
+}*/
