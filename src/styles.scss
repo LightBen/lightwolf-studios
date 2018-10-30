@@ -31,7 +31,7 @@ $icoHeight:         40px;
 
 
 
-$xs:                576px;
+$xs:                641px;
 $sm:                720px;
 $md:                960px;
 $lg:                1140px;
@@ -92,17 +92,18 @@ header { position: fixed; left: 0; top: 0; width: 100%; display: flex; padding: 
     display: flex; 
     > * {  }
 }
-.logo { width: 60px; height: 60px; background-image: url('./assets/img/logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center; margin: 0; transition: all 0.2s ease-in-out; }
-.h1 { display: none; margin-top: 1.4rem; margin-bottom: 0; color: $mainColor; font-size: 4rem; font-weight: 200; transition: all 0.2s ease-in-out; }
+.logo { z-index: 100; width: 50px; height: 50px; margin: 15px 1rem 15px 2rem; background-image: url('./assets/img/logo/logo-head-circle-fff.png'); background-size: contain; background-repeat: no-repeat; background-position: center; transition: all 0.2s ease-in-out; }
+.h1 { display: none; margin-top: 2rem; margin-bottom: 0; color: $mainColor; font-size: 4rem; font-weight: 200; transition: all 0.2s ease-in-out; }
 .header-right { 
     display: flex; padding: 0; position: relative; z-index: 100; margin-left: auto;
     > * { 
-        width: $icoWidth; height: $icoHeight; margin: 0; padding: 1rem; margin: 1rem; cursor: pointer; transition: all 0.2s ease-in-out; background-repeat: no-repeat; background-size: contain; background-position: center;
+        width: $icoWidth; height: $icoHeight; margin: 0; padding: 1rem; margin: 2rem; cursor: pointer; transition: all 0.2s ease-in-out; background-repeat: no-repeat; background-size: contain; background-position: center;
         &:hover {  }
         &:nth-child(1) {
-            transform: rotate(0);
+            transform: rotate(0); 
             &:hover { transform: rotate(90deg); }
         }
+        & + * { margin-left: 0; }
     }
 }
 .night-icon { background-image: url('./assets/img/sun.svg'); }
@@ -110,7 +111,7 @@ header { position: fixed; left: 0; top: 0; width: 100%; display: flex; padding: 
 
 @media screen and (min-width: $xs) {
     header { padding: $spaceLg; }
-    .logo { margin: 0 2rem 0 0; }
+    .logo { margin: 1.4rem 2rem 0 0; }
     .header-right {  }
 }
 
@@ -311,7 +312,7 @@ footer { text-align: center; padding: $spaceXs 1rem; font-weight: 400; }
 /* NIGHT MODE CSS5 */
 @media (light-level: washed) {
     a:hover { color: #fff; }
-    .logo { background-image: url('./assets/img/logo-night.png'); }
+    .logo { background-image: url('./assets/img/logo/logo-head-fff.png'); }
     .night-icon { background-image: url('./assets/img/sun-night.svg'); }
     .menu-icon { background-image: url('./assets/img/ico-menu-night.svg'); }
     .menu { 
@@ -324,7 +325,7 @@ footer { text-align: center; padding: $spaceXs 1rem; font-weight: 400; }
 }
 body.night {
     a:hover { color: #fff; }
-    .logo { background-image: url('./assets/img/logo-night.png'); }
+    .logo { background-image: url('./assets/img/logo/logo-head-fff.png'); }
     .night-icon { background-image: url('./assets/img/sun-night.svg'); }
     .menu-icon { background-image: url('./assets/img/ico-menu-night.svg'); }
     .menu { 
