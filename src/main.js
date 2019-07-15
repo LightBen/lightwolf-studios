@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
 import firebase from 'firebase/app'
+import VueAnalytics from 'vue-analytics'
 
 Vue.config.productionTip = false
 Vue.config.devtools = true
@@ -21,3 +22,7 @@ var config = {
   messagingSenderId: process.env.FIREBASE_SENDER_ID
 };
 firebase.initializeApp(config);
+
+Vue.use(VueAnalytics, {
+  id: 'UA-50404310-1'
+})
