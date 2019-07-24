@@ -3,15 +3,9 @@ import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
 import firebase from 'firebase/app'
-import VueAnalytics from 'vue-analytics'
 
 Vue.config.productionTip = false
 Vue.config.devtools = true
-
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
 
 var config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -19,10 +13,12 @@ var config = {
   databaseURL: process.env.FIREBASE_DB_URL,
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   projectId: process.env.FIREBASE_PROJECT_ID,
-  messagingSenderId: process.env.FIREBASE_SENDER_ID
+  messagingSenderId: process.env.FIREBASE_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID
 };
 firebase.initializeApp(config);
 
-Vue.use(VueAnalytics, {
-  id: 'process.env.GA_ID'
-});
+new Vue({
+  router,
+  render: h => h(App)
+}).$mount('#app')

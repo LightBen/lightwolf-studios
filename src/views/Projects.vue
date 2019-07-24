@@ -62,8 +62,8 @@
                     },
                     {
                         class: 'days',
-                        name: '7 Days (early demo)',
-                        link: 'https://days-3bc12.firebaseapp.com',
+                        name: '7 Days',
+                        link: 'https://bereshit7days.web.app',
                         desc: '7 days of the Creation',
                         date: '2018',
                         tags: '#svg #animation #pwa #fromScratch'
@@ -71,26 +71,10 @@
                     {
                         class: 'mps',
                         name: 'My Perek Shira (early demo)',
-                        link: 'https://my-perek-shira.firebaseapp.com',
+                        link: 'https://my-perek-shira.web.app',
                         desc: 'Ancient Jewish text',
                         date: '2018',
                         tags: '#react #pwa'
-                    },
-                    {
-                        class: 'mt',
-                        name: 'MarkTen',
-                        link: 'https://markten.com',
-                        desc: 'E-cigarettes',
-                        date: '2018',
-                        tags: '#ecommerce #magento'
-                    },
-                    {
-                        class: 'gs',
-                        name: 'Green Smoke',
-                        link: 'https://www.greensmoke.com',
-                        desc: 'E-cigarettes',
-                        date: '2015-2018',
-                        tags: '#ecommerce #magento'
                     },
                     {
                         class: 'commlife',
@@ -197,14 +181,6 @@
                         tags: '#fromScratch'
                     },
                     {
-                        class: 'zappings',
-                        name: 'Les Zappings',
-                        link: 'http://www.spectacle-enfant-zapping.fr',
-                        desc: 'Animation group for children',
-                        date: '2008',
-                        tags: '#fromScratch'
-                    },
-                    {
                         class: 'tlr',
                         name: 'Tekken Light Resurrection',
                         link: 'https://lws-prev.firebaseapp.com/tlr',
@@ -214,6 +190,22 @@
                     }
                 ],
                 projectsOld: [
+                    {
+                        class: 'mt',
+                        name: 'MarkTen',
+                        link: 'https://markten.com',
+                        desc: 'E-cigarettes',
+                        date: '2018',
+                        tags: '#ecommerce #magento'
+                    },
+                    {
+                        class: 'gs',
+                        name: 'Green Smoke',
+                        link: 'https://www.greensmoke.com',
+                        desc: 'E-cigarettes',
+                        date: '2015-2018',
+                        tags: '#ecommerce #magento'
+                    },
                     {
                         class: 'ct',
                         name: 'Constantine Tefilot',
@@ -256,6 +248,14 @@
                         date: '2011',
                         tags: "#ecommerce"
                     },
+                    {
+                        class: 'zappings',
+                        name: 'Les Zappings',
+                        link: 'http://www.spectacle-enfant-zapping.fr',
+                        desc: 'Animation group for children',
+                        date: '2008',
+                        tags: '#fromScratch'
+                    }
                 ]
             }
         }
